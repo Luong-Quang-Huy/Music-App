@@ -127,16 +127,16 @@ export const trackData = [
   {
     id: 2,
     src: "../public/One Piece  Luffy  Ace  Suốt đời là anh em.mp3",
-    photo: "../public/luffy.jpg",
+    photo: "../public/giang-ho-mom.jpg",
     name: "NONSTOP VIỆT MIX 2021 - Suốt Đời Là Anh Em",
     artist: "Luffy",
   },
   {
     id: 3,
-    src: "../public/Fall Out Boy - THE PHOENIX (Kinetic Typography Lyrics) (128 kbps).mp3",
-    photo: "../public/the-phoenix-background.jpg",
-    name: "Fall Out Boy - THE PHOENIX (Kinetic Typography Lyrics)",
-    artist: "fallout boy",
+    src: "../public/y2mate.com - DONT CÔI.mp3",
+    photo: "../public/dont-coi.jpg",
+    name: "DON'T CÔI",
+    artist: "RPT ORIJINN",
   },
   {
     id: 4,
@@ -144,5 +144,26 @@ export const trackData = [
     photo: "../public/yeu-tu-dau-ma-ra-background.jpg",
     name: "Yêu Từ Đâu Mà Ra Remix TikTok",
     artist: "TRÀ CHANH REMIX",
+  },
+  {
+    id: 5,
+    src: "../public/Craig David  Insomnia Official Video.mp3",
+    photo: "../insomnia.jpg",
+    name: "Craig David  Insomnia Official",
+    artist: "Craig David",
+  },
+  {
+    id: 6,
+    src: "../public/y2mate.com - Như Một Người Dưng  Nguyễn Thạc Bảo Ngọc x RyanLo  Fi Ver by 1 9 6 7 Audio Lyrics.mp3",
+    photo: "../public/ntbn.jpg",
+    name: "Như Một Người Dưng  Fi Ver by 1 9 6 7",
+    artist: "Nguyễn Thạc Bảo Ngọc x RyanLo",
+  },
+  {
+    id: 7,
+    src: "../public/y2mate.com - Barren Gates  MIME  Enslaved NCS Release.mp3",
+    photo: "../public/ncs.jpg",
+    name: "Barren Gates & M.I.M.E - Enslaved [NCS Release]",
+    artist: "Barren Gates & MIME",
   },
 ];
