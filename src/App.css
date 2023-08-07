@@ -342,11 +342,11 @@ img{
   position: absolute;
   top: 0;
   right: 0;
-  height: calc(100vh - 64px);
+  height: calc(100vh - 80px);
  
   padding: 8px 4px;
   background-color: #121212;
-  width: 66%;
+  width: 60%;
   min-width: 686px;
   list-style: none;
 }
