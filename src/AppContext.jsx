@@ -125,6 +125,13 @@ export const trackData = [
     artist: "RubiEDM",
   },
   {
+    id: 8,
+    src: "../public/y2mate.com - Brook Xiao  Fire Lyrics ft Rachel Horter.mp3",
+    photo: "../public/fire.jpg",
+    name: "Brook Xiao - Fire (Lyrics) ft. Rachel Horter",
+    artist: "Brook Xiao",
+  },
+  {
     id: 2,
     src: "../public/One Piece  Luffy  Ace  Suốt đời là anh em.mp3",
     photo: "../public/giang-ho-mom.jpg",
