@@ -3,7 +3,7 @@ import { HeartFilled } from "@ant-design/icons";
 
 export default function TrackDescription({currentTrack}) {
   const [liked, setLiked] = useState(false);
-  const {photo, name, artist} = currentTrack ?? {photo: "../public/hinh-vu-dep-2.jpg",name: "Track name",artist: "Artist name"};
+  const {photo, name, artist} = currentTrack ?? {photo: "hinh-vu-dep-2.jpg",name: "Track name",artist: "Artist name"};
 
   const toggleLike = () => {
     setLiked(!liked);
