@@ -353,20 +353,15 @@ img{
   z-index: 1;
 }
 
-@media (max-width: 480px){
-  .track-list{
-    width: 100%;
-  }
-}
-
-@media (max-width: 620px){
-  .track-list{
-    width: 100%;
-  }
-}
 
 @media (max-width: 786px){
   .track-list{
     width: 80%;
+  }
+}
+
+@media (max-width: 480px){ 
+  .track-list{
+    width: 100%;
   }
 }
