@@ -1,7 +1,7 @@
 import { HeartOutlined } from "@ant-design/icons";
 import { useState } from "react";
 import { PlayCircleFilled, PauseCircleFilled} from "@ant-design/icons";
-import { useAudioDispatch, useAudioContext } from "./AppContext";
+import { useAudioDispatch, useAudioContext, useFavoriteTrackContext, useFavoriteTrackDispatch } from "./AppContext";
 
 
 export default function TrackList({trackList, currentId, handleCurrentIdChange}){
@@ -20,17 +20,30 @@ export default function TrackList({trackList, currentId, handleCurrentIdChange})
 }
 
 const Track = ({track , index, onPlaying, handleCurrentIdChange}) => {
-
     const {isPlaying} = useAudioContext();
-    const {photo, name, artist, id} = track; 
+    const {id, photo, name, artist} = track; 
     const dispath = useAudioDispatch();
     const [onHover, setOnHover] = useState(false);
-    const [liked, setLiked] = useState(false);
     const trackName = name;
+    const liked = (() => {
+      const favoriteIds = useFavoriteTrackContext();
+      return favoriteIds.includes(id);
+    })();
+    const favoriteTrackDispatch = useFavoriteTrackDispatch();
 
-    const toggleLike = () => {
-        setLiked(!liked);
-    }
+    const handleLike = () => {
+      favoriteTrackDispatch({
+        type: "like",
+        taskId: id,
+      });
+    };
+
+    const handleDislike = () => {
+      favoriteTrackDispatch({
+        type: "dislike",
+        taskId: id,
+      });
+    };
 
     const handlePlay = () => {
         dispath({
@@ -86,7 +99,7 @@ const Track = ({track , index, onPlaying, handleCurrentIdChange}) => {
             </div>
             {onHover && (
               <button
-                onClick={toggleLike}
+                onClick={liked ? handleDislike : handleLike}
                 className={
                   liked
                     ? "btn btn-controller btn-controller--acitve"
@@ -138,7 +151,7 @@ const Track = ({track , index, onPlaying, handleCurrentIdChange}) => {
             </div>
             {onHover && (
               <button
-                onClick={toggleLike}
+                onClick={liked ? handleDislike : handleLike}
                 className={
                   liked
                     ? "btn btn-controller btn-controller--acitve"

@@ -342,11 +342,31 @@ img{
   position: absolute;
   top: 0;
   right: 0;
-  height: calc(100vh - 80px);
- 
+  height: 100vh;
   padding: 8px 4px;
   background-color: #121212;
   width: 60%;
-  min-width: 686px;
   list-style: none;
+}
+
+.music-controller{
+  z-index: 1;
+}
+
+@media (max-width: 480px){
+  .track-list{
+    width: 100%;
+  }
+}
+
+@media (max-width: 620px){
+  .track-list{
+    width: 100%;
+  }
+}
+
+@media (max-width: 786px){
+  .track-list{
+    width: 80%;
+  }
 }
